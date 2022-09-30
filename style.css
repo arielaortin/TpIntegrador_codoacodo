@@ -1,0 +1,17 @@
+.img-logo{
+    width: 100px;
+}
+
+main{
+
+    background-image: url(imagenes/ba1.jpg); 
+    background-position: center;
+    background-size: cover;
+    height: 600px;}
+
+form{
+
+  display: block;
+   align-items:center;
+}
+
