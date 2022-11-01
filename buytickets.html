@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="styletickets.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="offset-md-1 navbar-brand" href="#">
+                <img src="imagenes/codoacodo.png" alt="logo-cac" class="img-logo" style="width: 30%">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex justify-content-end">
+          <div class="collapse navbar-collapse pe-5" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#">Convertite en orador</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link text-success" href="buytickets.html">Comprar tickets</a>
+              </li>
+             
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav> 
+
+</header>
+
+
+    <main>
+      <div class="container-fluid">
+
+        <div class="card-descuento row"  style="display: flex; justify-content:center">
+     
+      <div class="card text-center border-info m-1" style="width: 13rem; height: 11rem; border-radius: 0%;">
+        <div class="card-body">
+          <h5 class="card-title">Estudiante</h5>
+          <p class="card-text">Tienen un descuento de</p>
+          <p class="fw-bolder">80%</p>
+          <p  style="color: rgb(135, 135, 135); font-size: 0.8rem;">*Presentar documentación</p>
+        </div>
+      </div>
+      <div class="card text-center border-primary m-1" style="width: 13rem;height: 11rem; border-radius: 0%;">
+        <div class="card-body">
+          <h5 class="card-title">Trainee</h5>
+          <p class="card-text">Tienen un descuento de</p>
+          <p class="fw-bolder">50%</p>
+          <p  style="color: rgb(135, 135, 135); font-size: 0.8rem;">*Presentar documentación</p>
+        </div>
+      </div>
+      <div class="card text-center border-warning m-1" style="width: 13rem; height: 11rem; border-radius: 0%;">
+        <div class="card-body">
+          <h5 class="card-title">Junior</h5>
+          <p class="card-text">Tienen un descuento de</p>
+          <p class="fw-bolder">15%</p>
+          <p  style="color: rgb(135, 135, 135); font-size: 0.8rem;">*Presentar documentación</p>
+        </div>
+      </div>
+    </div>        
+    <div class="row g-0 mt-4">
+      <div class="col-12" style="text-align:center">
+        <p class="fw-light">VENTA</p>
+      </div>
+      </div>
+      <div class="row g-0 text-center">
+        <div class="col-12">
+          <p class="fs-3 text fw-semibold">VALOR DE TICKET $200</p>
+      </div>
+        </div>
+          </div>
+        </div>
+    <div class="container-fluid">
+      <form>
+          <div class="row justify-content-center mb-3">
+              <div class="col-5">
+          <div class="input-group mb-3">
+              <input type="text" class="form-control m-2" placeholder="Nombre" aria-label="Username">
+              <input type="text" class="form-control m-2" placeholder="Apellido" aria-label="Server">
+            </div>
+            
+            <div class="input-group">
+              <input type="text" class="form-control m-2" placeholder="Correo" aria-label="Username">
+            </div>       
+            <div class="input-group mb-3 row">
+              <div class="col-md-6">
+              <label for="Cantidad" class="form-label m-2">Cantidad</label>
+              <input type="text" id="cantidad" class="form-control m-2" placeholder="Cantidad" aria-label="Username">
+            </div>
+            <div class="col-md-6">
+              <label for="inlineFormSelectPref" class="form-label m-2">Categoría</label>
+              <select class="form-select m-2" id="inlineFormSelectPref">
+                <option selected value="0">Selecciona una opción</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+              </select>              
+              </div>
+            </div>
+            
+         <div class="row m-2">
+          <textarea class="form-control" style="background-color: rgba(177, 228, 245, 0.852); color: rgb(0, 0, 124);" placeholder="Total a pagar: $" id="floatingTextarea" style="color: cyan-200">Total a pagar: $</textarea>
+         
+          </div>
+          <div class="row justify-content-center m-2">
+            
+              <button class="btn btn-success col-md-6"  type="button"  id="reset">Borrar</button>
+              <button class="btn btn-success col-md-6" type="button" id="calcular">Resumen</button>
+            </div>
+           <!-- <button class="btn btn-success m-2" type="button" style="width:50%" id="reset">Borrar</button> 
+            <button class="btn btn-success m-2" type="button" style="width:50%" id="calcular">Resumen</button>-->
+            </div>
+          </div>
+         </div>
+          
+      </form>
+  </div> 
+</main>
+
+    <nav>
+        <ul class="nav navbar-dark g-0 pt-4 justify-content-center" style="background-color: rgb(29, 55, 68);">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Preguntas <br> frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Términos y <br> condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Estudiantes</a>
+              </li>
+          </ul>    
+
+
+        </nav>
+
+        <script src="script.js"></script>
+        
+     
+    </body>
+</html>
+
